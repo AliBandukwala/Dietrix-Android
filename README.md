@@ -1,0 +1,2 @@
+# Dietrix
+Dietrix is an Android application specifically created for Dietitians/Nutritionists. It is developed with the focus of making the work-life of these professionals easier and digital. Its helps dietitians create a database of their clients and keep record of each of their client's weights, payments, and sends them a digital chart everyday directly to their WhatsApp numbers, and it also gives dietitians their monthly income report and progress.
