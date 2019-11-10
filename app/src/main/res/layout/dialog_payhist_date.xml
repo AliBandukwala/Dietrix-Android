@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@color/bgGrey"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/PayHistDialogTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATE"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/PayHistDialogDateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_below="@+id/PayHistDialogTitleTxt"
+        android:layout_marginTop="7dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/PayHistDialogDateCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/PayHistDialogDateTxt"
+        android:layout_marginTop="10dp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="Cancel"
+        android:textColor="@color/lightRed"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/PayHistDialogDateOKtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/PayHistDialogDateCancelBtn"
+        android:layout_toEndOf="@+id/PayHistDialogDateCancelBtn"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="OK"
+        android:textColor="@color/lightRed"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    tools:context="dietrixapp.dietrix.FirstBoot">
+
+    <EditText
+        android:id="@+id/BootFirstTxt"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/BootSecondTxt"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="13dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/BootSecondTxt"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BootFirstTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="13dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/BootTaglineTxt"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BootSecondTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Tagline for charts."
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:paddingEnd="10dp"
+        android:paddingStart="13dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/BootRmdPayTxt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BootTaglineTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Reminder message for Payment Due."
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="13dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/BootRmdWtTxt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BootRmdPayTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Reminder message to send current weight."
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="13dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/BootBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="11dp"
+        android:text="Continue"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>

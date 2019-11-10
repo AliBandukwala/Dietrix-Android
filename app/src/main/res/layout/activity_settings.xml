@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGrey"
+    android:padding="12dp"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/SettingCardClView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/SettingsViewTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkBlue"
+                    android:text="Clients' View Order:"
+                    android:textSize="22sp"
+                    android:background="@drawable/border_bottom"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/SettingsRadioGroup"
+                    android:layout_below="@+id/SettingsViewTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/SettingsRadioDefault"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="New Added First"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/SettingsRadioAlpha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:text="Alphabetically"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/SettingViewSaveBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SettingsRadioGroup"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:text="Save"
+                    android:textColor="@color/darkRed"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/SettingsCardTaglines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:background="@color/active_dot"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/SettingTaglineTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change Taglines/Reminders:"
+                    android:textColor="@color/darkBlue"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:background="@drawable/border_bottom"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:id="@+id/SettingTaglineLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_below="@+id/SettingTaglineTxt"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/TaglineFN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your First Name"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+
+                    <EditText
+                        android:id="@+id/TaglineLN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Last Name"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+
+                    <EditText
+                        android:id="@+id/TaglineCharts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tagline for Charts"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+
+                    <EditText
+                        android:id="@+id/TaglinePayments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reminder for Payments"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+
+                    <EditText
+                        android:id="@+id/TaglineWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reminder for Weight Updates"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+
+                    <Button
+                        android:id="@+id/SettingTaglineSaveBtn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#ffffff"
+                        android:text="Save"
+                        android:textColor="@color/darkRed"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/SettingCardContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/SettingsContactDevTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkBlue"
+                    android:text="Contact Developers:"
+                    android:textSize="22sp"
+                    android:background="@drawable/border_bottom"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"/>
+
+                <Button
+                    android:id="@+id/SettingEmailButton"
+                    android:layout_below="@+id/SettingsContactDevTxt"
+                    android:padding="10dp"
+                    android:text="Send Email"
+                    android:textSize="17sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textColor="@color/darkRed"
+                    android:background="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

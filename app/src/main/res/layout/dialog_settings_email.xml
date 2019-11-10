@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/SettingEmailTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's the question about?"
+        android:textSize="22sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/darkBlue"/>
+
+    <RadioGroup
+        android:id="@+id/SettingEmailTopicRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SettingEmailTxt"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complaint"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestion"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help on something"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other questions"
+            android:textSize="24sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/SettingsEmailProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Proceed"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/darkBlue"
+        android:layout_below="@+id/SettingEmailTopicRadio"
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/SettingsEmailCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Cancel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/darkBlue"
+        android:layout_below="@+id/SettingEmailTopicRadio"
+        android:background="#ffffff"/>
+
+</RelativeLayout>

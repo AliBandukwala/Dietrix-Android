@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardCornerRadius="7dp"
+    android:layout_marginBottom="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LinearGap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/WtHisDateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/WtHisCrntWtTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="20dp"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/WtHisCrBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:layout_marginStart="40dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/WtHisRemoveBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/LinearGap"
+            android:layout_alignParentEnd="true"
+            android:background="@color/cardview_light_background"
+            app:srcCompat="@drawable/ic_weighthistory_remove" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/WtHisName"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:visibility="gone"/>
+
+</android.support.v7.widget.CardView>
+

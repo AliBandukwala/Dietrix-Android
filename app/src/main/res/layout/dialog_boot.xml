@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bgGrey">
+
+    <EditText
+        android:id="@+id/BootDialFNameET"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/BootDialSNameET"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/BootDialFNameET"
+        android:layout_alignEnd="@+id/BootDialFNameET"
+        android:layout_below="@+id/BootDialFNameET"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/BootDialTagET"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/BootDialSNameET"
+        android:layout_below="@+id/BootDialSNameET"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Tagline for Charts"
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/BootDialPayET"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/BootDialTagET"
+        android:layout_below="@+id/BootDialTagET"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Payment due Reminder"
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/BootDialWtET"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/BootDialPayET"
+        android:layout_below="@+id/BootDialPayET"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Current Weight Reminder"
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/DialUpdBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/BootDialWtET"
+        android:layout_below="@+id/BootDialWtET"
+        android:layout_marginTop="30dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/DialCancelBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DialUpdBtn"
+        android:layout_below="@+id/BootDialWtET"
+        android:layout_alignBottom="@+id/DialUpdBtn"
+        android:layout_alignStart="@+id/BootDialWtET"
+        android:text="Cancel" />
+</RelativeLayout>

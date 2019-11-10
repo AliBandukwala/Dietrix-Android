@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom">
+
+
+        <Button
+            android:id="@+id/RemindBtn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/PayDueDateTxt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/cardview_light_background"
+            android:hapticFeedbackEnabled="true"
+            android:text="Remind"
+            android:textAlignment="center"
+            android:textColor="@color/lightRed"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PayNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PayDueDateTxt"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PayNameTxt"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/PayFeeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/RemindBtn"
+            android:layout_alignStart="@+id/RemindBtn"
+            android:layout_toEndOf="@+id/PayNameTxt"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PayId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textSize="1sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/PayPhoneNo"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textSize="1sp"
+            android:layout_alignEnd="@+id/PayId"
+            android:layout_below="@+id/PayFeeTxt"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/PayDuration"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textSize="1sp"
+            android:layout_alignEnd="@+id/PayId"
+            android:layout_below="@+id/PayFeeTxt"
+            android:visibility="gone" />
+
+</RelativeLayout>

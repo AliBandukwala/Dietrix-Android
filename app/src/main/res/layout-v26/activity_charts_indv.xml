@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chartsOrange"
+    android:paddingBottom="4dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="dietrixapp.dietrix.ChartsIndv">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ChartNameSp"
+            android:textSize="21sp"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChartImgView"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ChartImgView"
+            android:background="@drawable/rounded"
+            android:padding="6dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/ChartDateET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChartNameSp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/ChartImgView"
+            android:background="@drawable/rounded"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Greetings"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/ChartImgView"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Wake Up :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/WakeUpET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:maxLines="2"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Breakfast :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/BrkET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:paddingTop="5dp"
+                android:maxLines="2"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout2"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Mid Meal :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/MidET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout3"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:text="Lunch :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/LunchET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout4"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Afternoon Meal :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/AftMET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:paddingTop="5dp"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Evening Meal :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/EveMET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:paddingTop="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout6"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Dinner :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/DinnerET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout7"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Bed Time :"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/BedET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/SSBtn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/ChartDateET"
+            android:background="@color/chartsOrange"
+            android:onClick="SaveAndSEND"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+        <ImageView
+            android:id="@+id/ChartImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Greetings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ChartDateET"
+            android:layout_alignStart="@+id/ChartDateET"
+            android:layout_marginTop="20dp"
+            android:paddingStart="5dp"
+            android:textSize="13sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/ChartWrngTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SSBtn"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ChartImgView"
+            android:textColor="@color/lightRed"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout8"
+            android:layout_alignEnd="@+id/linearLayout8"
+            android:layout_marginEnd="5dp"
+            android:text="Dietrix App"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

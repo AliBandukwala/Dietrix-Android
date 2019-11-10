@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/WeightNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WeightNameTxt">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Current Weight :"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/WeightCrntWt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="numberDecimal"
+                android:background="@null"
+                android:focusableInTouchMode="true"
+                android:textAlignment="viewStart"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/WeightDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/WeightEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@color/cardview_light_background"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_weight_check" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL1"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Current BMI :"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/WeightCrBMITxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/WeightRemind"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/LL1"
+            android:text="Remind"
+            android:textColor="@color/lightRed"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/WeightID"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/WeightJnBMITxt"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/WeightPhone"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/WeightID"
+            android:layout_marginEnd="49dp"
+            android:layout_toStartOf="@+id/WeightRemind"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Weightheight"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/WeightID"
+            android:layout_marginEnd="49dp"
+            android:layout_toStartOf="@+id/WeightRemind"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

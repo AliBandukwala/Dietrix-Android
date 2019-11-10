@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgGrey"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="dietrixapp.dietrix.Payments">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/IncomeGraphCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/IncomeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monthly Income :"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FF000000"
+                        android:layout_marginBottom="3dp"/>
+
+                    <TextView
+                        android:id="@+id/IncomePercentTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="19sp"
+                        android:layout_alignBaseline="@+id/IncomeTxt"
+                        android:layout_alignParentEnd="true"
+                        android:textAlignment="viewEnd"
+                        android:layout_toEndOf="@+id/IncomeTxt"/>
+
+                </RelativeLayout>
+
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/IncomeGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/lightGreen" />
+
+                <TextView
+                    android:id="@+id/RevenueViewDetailsTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VIEW DETAILS"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkBlue"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border_top_bottom"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/middleRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IncomeGraphCard"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/MonthlyIncomeTxtCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aprx. Income in"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/RevenueMonthTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewEnd"
+                            android:maxLines="1"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/MonthlyIncomeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="#FF000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Active Clients"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/ActiveCountTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/middleRL">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PaymentDueTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payments Due :"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FF000000"
+                        android:layout_marginBottom="3dp"/>
+
+                    <TextView
+                        android:id="@+id/PayDueCountTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_alignBaseline="@+id/PaymentDueTxt"
+                        android:layout_alignParentEnd="true"
+                        android:textAlignment="viewEnd"
+                        android:layout_toEndOf="@+id/PaymentDueTxt"/>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="3dp">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

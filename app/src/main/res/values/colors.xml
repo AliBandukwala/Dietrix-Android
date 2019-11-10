@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightRed">#e73d3d</color>
+    <color name="darkRed">#de151b</color>
+    <color name="accentRed">#de151b</color>
+    <color name="bgRed">#80ffb3b3</color>
+    <color name="lightBlue">#39a4c6</color>
+    <color name="darkBlue">#0194C4</color>
+    <color name="bgBlue">#809CC0CC</color>
+    <color name="lightGreen">#97b735</color>
+    <color name="darkGreen">#728927</color>
+    <color name="BgGreen">#80B5C582</color>
+    <color name="chartsOrange">#FDA164</color>
+    <color name="bgGrey">#ece9e9</color>
+    <color name="intro1">#C93101</color>
+    <color name="intro2">#651FFF</color>
+    <color name="intro3">#00E676</color>
+    <color name="intro4">#00B0FF</color>
+    <color name="intro5">#DAA402</color>
+    <color name="active_dot">#fffafa</color>
+    <color name="inactive_dot">#83878b</color>
+</resources>
+

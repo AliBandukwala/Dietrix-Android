@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Dietrix</string>
+    <string name="show_all">Show All clients</string>
+
+    <string name="shortcutDisable">No Shortcut available</string>
+    <string name="shortcutLongLabel">Add new client</string>
+    <string name="shortcutShortLabel">new client</string>
+
+    <string name="shortcutPayLong">Financial Report</string>
+    <string name="shortcutPayShort">Financial Report</string>
+    <string name="shortcutPayDisable">No Shortcut available</string>
+
+    <string name="shortcutWeightLong">Current Weights</string>
+    <string name="shortcutWeightShort">Weights</string>
+
+    <string name="shortcutChartLong">Create Charts</string>
+    <string name="shortcutChartShort">Charts</string>
+
+    <string name="intro1">Press this button to : Add clients with BLUE button OR Create Charts with ORANGE button</string>
+
+    <string name="intro2">This is where you can see your full Financial Report.</string>
+
+    <string name="intro3">This is where you can Check and Update all your active clients Current Weights</string>
+
+    <string name="intro4">Make Phone Calls or send Emails directly from the app</string>
+
+    <string name="intro5">Send Charts or Reminders directly to your Clients WhatsApp page, without having to search for them</string>
+
+    <string-array name="DurationList">
+        <item>1 month</item>
+        <item>3 month</item>
+        <item>6 month</item>
+        <item>1 year</item>
+    </string-array>
+
+    <string-array name="ActInact">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+    <string name="title_activity_income_history_tabs">Statistics</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>

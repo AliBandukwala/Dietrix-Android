@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgGrey"
+    android:fillViewport="true"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context="dietrixapp.dietrix.ClientDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/DetailIdTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true" />
+
+
+        <TextView
+            android:id="@+id/DetailActTxt"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_below="@+id/DetailIdTxt"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:id="@+id/LLNm"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/DetailActTxt">
+
+
+
+            <TextView
+                android:id="@+id/DetailNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#464646"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardCrWt"
+            android:layout_below="@+id/LLNm"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:id="@+id/LLCrWt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewCrWt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Current Weight :"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DetailCrWeightTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardDueDt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_alignEnd="@+id/DetailActTxt"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_toEndOf="@+id/CardCrWt"
+            android:layout_alignTop="@+id/CardCrWt">
+
+            <LinearLayout
+                android:id="@+id/LLDueDt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewDueDt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Next Due Date :"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DetailDueTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardCrBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/CardDueDt"
+            android:layout_alignStart="@+id/CardCrWt"
+            android:layout_alignEnd="@+id/CardCrWt"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLCrBMI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewCrBMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Current B.M.I :"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/DetailCrBMITxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            android:layout_alignStart="@+id/CardDueDt"
+            app:cardCornerRadius="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/CardCrBMI"
+            android:layout_alignTop="@+id/CardCrBMI">
+
+            <LinearLayout
+                android:id="@+id/LLFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Fee :"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/DetailFeeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardSpCs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/CardFee"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLSpCs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSpCs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Specific Conditions :"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/DetailSpCsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/TextGap"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/CardSpCs"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/TextGap"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Phone Number :"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/DetailPhoneTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardJnWt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/CardPhone"
+            android:layout_alignStart="@+id/CardCrWt"
+            android:layout_alignEnd="@+id/CardCrWt"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLJnWt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJnWt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Joining Weight :"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DetailJnWeightTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardJnDt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_toEndOf="@+id/CardJnWt"
+            android:layout_alignTop="@+id/CardJnWt"
+            android:layout_alignStart="@+id/CardDueDt">
+
+            <LinearLayout
+                android:id="@+id/LLJnDt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJnDT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Joining Date :"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/DetailJoinDateTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardJnBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/CardJnWt"
+            android:layout_alignStart="@+id/CardCrWt"
+            android:layout_alignEnd="@+id/CardCrWt"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLJnBMI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJnBMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Joining B.M.I :"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DetailJnBMITxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardDur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_toEndOf="@+id/CardJnBMI"
+            android:layout_alignStart="@+id/CardDueDt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/CardJnBMI">
+
+            <LinearLayout
+                android:id="@+id/LLDur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewDur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Duration :"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/DetailDurationTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardHt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/CardJnBMI"
+            android:layout_alignStart="@+id/CardCrWt"
+            android:layout_alignEnd="@+id/CardCrWt"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLHt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewHt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Height :"
+                    android:textAlignment="textStart"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/DetailHeightTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_toEndOf="@+id/CardHt"
+            android:layout_alignTop="@+id/CardHt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/CardDueDt">
+
+            <LinearLayout
+                android:id="@+id/LLAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Age :"
+                    android:textAlignment="textStart"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/DetailAgeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/CardHt"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Email :"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/DetailEmailTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="15dp"
+            android:layout_below="@+id/CardEmail"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/LLAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Address :"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/DetailAddTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:paddingTop="5dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardPayHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardAddress"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="15dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_top_bottom"
+                android:padding="10dp"
+                android:text="View Payment History"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkBlue"
+                android:onClick="PaymentHistory"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

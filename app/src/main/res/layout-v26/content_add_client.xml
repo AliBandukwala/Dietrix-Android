@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context="dietrixapp.dietrix.AddClientAct"
+    tools:showIn="@layout/activity_add_clients">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/ClNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Enter Client's name"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/ClPhoneET"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:layout_alignStart="@+id/ClNameET"
+            android:layout_below="@+id/ClNameET"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="(+xxx) Phone"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/ClAgeET"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:layout_alignBaseline="@+id/ClPhoneET"
+            android:layout_alignBottom="@+id/ClPhoneET"
+            android:layout_alignEnd="@+id/ClNameET"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/ClHeightET"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:layout_alignStart="@+id/ClPhoneET"
+            android:layout_below="@+id/ClPhoneET"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Ht. (ft.in)"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:autofillHints="5.10" />
+
+        <EditText
+            android:id="@+id/ClWeightET"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Wt.(Kg)"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:layout_above="@+id/ClFeeET"
+            android:layout_alignEnd="@+id/ClAgeET"
+            android:importantForAutofill="no" />
+
+
+        <EditText
+            android:id="@+id/ClBMIET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/ClFeeET"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:layout_alignStart="@+id/ClHeightET"
+            android:layout_below="@+id/ClHeightET"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Fee"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:importantForAutofill="no" />
+
+        <Spinner
+            android:id="@+id/ClDurationSp"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded"
+            android:entries="@array/DurationList"
+            android:layout_alignBaseline="@+id/ClFeeET"
+            android:layout_alignBottom="@+id/ClFeeET"
+            android:layout_alignEnd="@+id/ClAgeET" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Date :"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/ClFeeET"
+            android:layout_alignStart="@+id/ClFeeET" />
+
+        <TextView
+            android:id="@+id/ClDateET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Joining Date"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/ClFeeET"
+            android:layout_below="@+id/textView19"
+            android:background="@drawable/rounded"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/textViewDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Date :"
+            android:textSize="15sp"
+            android:layout_marginStart="8dp"
+            android:layout_alignTop="@+id/textView19"
+            android:layout_alignStart="@+id/ClDueET" />
+
+        <TextView
+            android:id="@+id/ClDueET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Due Date"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/rounded"
+            android:layout_below="@+id/textViewDue"
+            android:layout_alignEnd="@+id/ClDurationSp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/ClSpCaseET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/rounded"
+            android:hint="Specific Conditions"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_below="@+id/ClDateET"
+            android:layout_alignStart="@+id/ClDateET"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/ClAddressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Address"
+            android:maxLines="3"
+            android:inputType="textPostalAddress"
+            android:layout_below="@+id/ClEmailET"
+            android:layout_alignStart="@+id/ClEmailET"
+            android:layout_marginTop="18dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/ClEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/rounded"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ClSpCaseET"
+            android:layout_alignStart="@+id/ClSpCaseET"
+            android:importantForAutofill="no" />
+
+    </RelativeLayout>
+
+</ScrollView>
